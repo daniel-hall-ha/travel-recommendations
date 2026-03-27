@@ -98,7 +98,7 @@ input:focus {
     width: 100vw;
     height: 100vh;
     box-sizing: content-box;
-    background-image: url('/media/background.jpg');
+    background-image: url('media/background.jpg');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: none;

@@ -19,16 +19,16 @@ document.querySelector('#search').addEventListener('click',(event) => {
         const cities = data.countries.flatMap(c =>
             c.cities.map(city => ({
                 ...city,
-                type: "cities"
+                type: ["cities","country","countries","city"]
             }))        
         );
         const temples = data.temples.map(c => ({
             ...c,
-            type: 'temples'
+            type: ['temples','temple']
         }));
         const beaches = data.beaches.map(c => ({
             ...c,
-            type: 'beaches'
+            type: ['beaches','beach']
         }));
 
         const all = [...cities, ...temples, ...beaches];
